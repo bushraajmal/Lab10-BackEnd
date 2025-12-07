@@ -1,0 +1,3 @@
+:80 {
+    reverse_proxy bmi-backend:5000
+}
