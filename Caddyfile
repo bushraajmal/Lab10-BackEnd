@@ -1,3 +1,14 @@
 143.110.184.27.nip.io {
+    header {
+        Access-Control-Allow-Origin *
+        Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        Access-Control-Allow-Headers "Content-Type"
+    }
+    
+    @options method OPTIONS
+    handle @options {
+        respond 204
+    }
+    
     reverse_proxy bmi-backend:5000
 }
