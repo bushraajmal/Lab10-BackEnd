@@ -1,4 +1,4 @@
-143.110.184.27.nip.io {
+143.110.184.27.sslip.io {
     header {
         Access-Control-Allow-Origin *
         Access-Control-Allow-Methods "GET, POST, OPTIONS"
