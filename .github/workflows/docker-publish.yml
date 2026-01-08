@@ -18,7 +18,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker Image
-      run: docker build -t f2023387/lab10-backend .
+      run: docker build -t f2023387/lab10-backend:latest .
 
     - name: Push Docker Image
-      run: docker push f2023387/lab10-backend
+      run: docker push f2023387/lab10-backend:latest
